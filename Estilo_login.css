@@ -2,7 +2,7 @@ body{
     background: url(bg_novo.svg), bottom, center, no-repeat;
     background-size: 100%, auto;
     margin: 0px;
-    
+    background-color: aqua;
 }
 
 .Login {
