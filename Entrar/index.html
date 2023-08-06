@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Estilo_Login.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="Estilo_Login_Query.css" media="screen"/>
+
+
+     <script src="https://kit.fontawesome.com/1c8b0a3809.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <section id="login">
+        <div id="img">
+        </div>
+        <div id="formulario">
+            <h1>Seja Bem-Vindo!</h1>
+            <form action="login.php" method="post">
+            
+        <div class="text_field">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Insira seu Email">
+        </div>
+
+        <div class="text_field">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="Insira sua senha">
+        </div>
+        <a class="esqueceu" href="url">Esqueci minha senha</a>
+        <button class="btn_login">Entrar</button>
+        
+        <div class="cadastro">Ainda não possui conta?
+            <a href="../Cadastro/cadastro.html" target="_self">Cadastra-se</a>
+        </div>
+            </form>
+        </div>
+
+    </section>
+    <script src="custom.js"></script>
+</body>
+</html>
