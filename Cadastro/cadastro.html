@@ -15,9 +15,11 @@
         <div id="img">
         </div>
         <div id="formulario">
-            <h1>Cadastra-se Agora</h1>
-            <form action="login.php" method="post">
-                
+            <h1>Cadastra-se Agora</h1><br>
+         
+            <form method="POST" id="cadastro">
+        <div id="Erros"></div>
+        
         <div class="text_field">
             <label for="nome">Seu Nome</label>
             <input type="text" id="nome" name="nome" placeholder="Insira seu Nome">
@@ -47,13 +49,9 @@
             <text class="check" id="Csenhaconfir"><i class="fa-regular fa-circle-check" style="color: #4fb828;"></i></text>
         </div>
     
-        <button class="btn_login">Cadastrar-se</button>
-        
+        <button id="btn_cadastro" class="btn_login">Cadastrar-se</button>
         <div class="cadastro">Já Possui conta?
             <a href="../Entrar/login.html" target="_self">Entrar</a>
-        </div>
-        <div class="text_field">
-            <text class="alert" id="Enome" ></text>
         </div>
             </form>
         </div>
