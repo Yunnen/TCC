@@ -126,6 +126,19 @@ if (Dados) {
   
       if (resposta['status'] == true) {
 
+                 $('#loading')
+                 .css({
+                    position: "fixed", // fixa o elemento
+                    zIndex: "9", // coloca o elemento por cima dos outros
+                    top: "50%", // move 50% do topo
+                    left: "50%", // move 50% da esquerda
+                    transform: "translate(-50%, -50%)" // centraliza
+                 })
+                 .show();
+                 $('#login').css({
+                    opacity: "0.1",
+                    trasition: "1s"
+                 })
 
         setTimeout(function() {
             $(location).attr('href', '../Entrar/login.html');
