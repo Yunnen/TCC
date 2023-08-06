@@ -131,3 +131,7 @@ section#login > div#formulario .cadastro{
     color: #d14919;
  }
 
+ section#login > div#formulario > div#Erros{
+    color: #d14919;
+ }
+
