@@ -126,7 +126,12 @@ if (Dados) {
   
       if (resposta['status'] == true) {
 
-       console.log('Boa');
+
+        setTimeout(function() {
+            $(location).attr('href', '../Entrar/login.html');
+        }, 5000);
+       
+        console.log('Boa');
 
        document.getElementById("Erros").innerHTML = resposta['msg'];
       } else {
