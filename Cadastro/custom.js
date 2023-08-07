@@ -146,10 +146,9 @@ if (Dados) {
        
         console.log('Boa');
 
-       document.getElementById("Erros").innerHTML = resposta['msg'];
       } else {
-        document.getElementById("Erros").innerHTML = resposta['msg'];
-        
+       
+        document.getElementById("Erros").innerHTML = resposta['msg']; 
       }
     });
   }
