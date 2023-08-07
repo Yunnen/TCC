@@ -7,13 +7,13 @@
 
 
     if (empty($dados['nome']) || strlen($dados['nome']) < 3 || strlen($dados['nome']) > 40) {
-        $retorna = ['status' => false, 'msg' => "<h1 >Erro</h1>"];
+        $retorna = ['status' => false, 'msg' => ""];
     }elseif(empty($dados['email']) || !filter_var($dados['email'], FILTER_VALIDATE_EMAIL)){
-        $retorna = ['status' => false, 'msg' => "<h1>Emaill</h1>"];
+        $retorna = ['status' => false, 'msg' => ""];
     }elseif(empty($dados['senha']) || strlen($dados['senha']) < 8 || strlen($dados['senha']) > 20){
-        $retorna = ['status' => false, 'msg' => "<h1>Senha</h1>"];
+        $retorna = ['status' => false, 'msg' => ""];
     }elseif($dados['confirmar'] != $dados['senha']){
-        $retorna = ['status' => false, 'msg' => "<h1>Senha Confirmada</h1>"];
+        $retorna = ['status' => false, 'msg' => ""];
     }else{
         
 
@@ -39,7 +39,7 @@
 
         $comando->execute();
 
-        $retorna = ['status' => true, 'msg' => "<h1>Confirmado vc é gay</h1>"];
+        $retorna = ['status' => true, 'msg' => ""];
     
     }catch (PDOException $e) {
     $retorna = ['status' => false, 'msg' => "<h1>Ocorreu um erro ao cadastrar: " . $e->getMessage() . "</h1>"];
