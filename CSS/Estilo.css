@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+:root{
+    --bg-color: black;
+}
+.fundo{
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.imgur.com/rDrwtiv.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+}
+.fundo background-img{
+    margin-top: -200px;
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+.fundo img{
+    width: 35%;
+    height: auto;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 300px;
+}
+body{
+    background-color: var(--bg-color);
+}
+.sobre{
+    position: absolute;
+    top: 0;
+}
+.sobre .sobrepor{
+    width: 50%;
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+}
+.navbar{
+    align-items: center;
+    width: auto;
+    background-color: transparent;
+    height: auto;
+    margin: 0;
+    display: flex;
+    height: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.navbar img{
+    height: 80px;
+    margin-right: 30px;
+}
+.navbar a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 9px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+.navbar .login{
+    margin-left: 30px;
+}
+
+.navbarnav{
+    width: 100%;
+    /* background-image: linear-gradient(to right , #67009a, #60038e, #fdba07); */
+    position: fixed;
+}
+.img{
+    left: 0;
+}
+.login{
+    position: absolute;
+    right: 0;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+}
+.login:hover
+{
+    color: black;
+    background-color: white;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    text-decoration: underline;
+  }
+  .login:hover{
+    text-decoration: none;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
