@@ -92,8 +92,9 @@ section#login > div#formulario .btn_login{
 section#login > div#formulario .btn_login:hover{
     width: 100%;
     border-radius: 10px;
-    background-color: green;
-    color: white;
+    background-color: transparent;
+    color:  #d14919;
+    border-color:  #d14919;
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
