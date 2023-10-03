@@ -258,7 +258,6 @@ body{
     display: flex;
     align-items: center;
     margin: 10px;
-
     width: 300px;
     height: 100px;
    }
@@ -285,8 +284,25 @@ body{
     display: inline-block;
     flex-wrap: wrap;
    }
+ 
 
-   
+   .cardstexto{
+    color: white;
+    position: relative;
+    top: 35vmax;
+    width: 99vmax;
+    text-align: center;
+  }
+  .cardstexto > label{
+   color: white;
+   padding: 20px;
+   display: block;
+  }
 
-
-
+  .cardstexto > label.textomaior{
+    font-size: 50px;
+   }
+   .cardstexto > label.textinho{
+    font-size: 20px;
+    line-height: 30px;
+   }
