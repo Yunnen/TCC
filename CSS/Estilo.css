@@ -252,6 +252,7 @@ body{
     background-color: transparent;
     border-style: solid;
     border-color: #ff5b1b;
+    border-width: 1px;
     color: white;
     text-align: center;
     justify-content: center;
@@ -288,7 +289,7 @@ body{
    .cardstexto{
     color: white;
     position: relative;
-    top: 25vmax;
+    top: 28vmax;
     width: 99vmax;
     text-align: center;
   }
@@ -304,5 +305,5 @@ body{
    .cardstexto > label.textinho{
     font-size: 25px;
     line-height: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
    }
