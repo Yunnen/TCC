@@ -1,6 +1,7 @@
 
  var btn = document.getElementById("btn_cadastro");
-
+ senha = true;
+ senhaconfir = true;
 
 
 $("#nome").blur(function() {
@@ -100,7 +101,18 @@ if(senhaconfir != senha){
     $('#senhaconfir').css('border-color','red');
 
    
-}else{
+}else if(senhaconfir == ""){
+    document.getElementById("Esenhaconfir").innerHTML = "<i class='fa-regular fa-circle-xmark' style='color: #b21f1f;'></i> Confirme sua senha";
+    $('#Esenhaconfir').css('display', 'inline');
+
+    $('#Csenhaconfir').css('display','none');
+
+    $('#senhaconfir').css('border-color','red');
+
+}
+
+
+else{
     $('#Esenhaconfir').css('display', 'none');
    
     $('#Csenhaconfir').css('display','contents');
@@ -151,4 +163,51 @@ if (Dados) {
         document.getElementById("Erros").innerHTML = resposta['msg']; 
       }
     });
+
+    function MostrarSenha(){
+        
+        var btn = document.getElementById("senha");
+        
+        if(senha == true){
+        
+        btn.type = "text";
+        this.senha = false;
+
+        $("#icon_senha").removeClass("fa-solid fa-eye").addClass("fa-solid fa-eye-slash");
+
+    }else{
+        
+        btn.type = "password"
+        this.senha = true;
+
+        $("#icon_senha").removeClass("fa-solid fa-eye-slash").addClass("fa-solid fa-eye");
+
+    }
+    }
+    function MostrarConfirme(){
+        
+        
+        var btn = document.getElementById("senhaconfir");
+        var icon = document.getElementById("icon_senhaconfirm");
+        
+        if(senhaconfir == true){
+        
+        btn.type = "text";
+        this.senhaconfir = false;
+
+        
+        btn.innerHTML = "";
+        
+        $("#icon_senhaconfirm").removeClass("fa-solid fa-eye").addClass("fa-solid fa-eye-slash");
+
+    }else{
+        
+        btn.type = "password"
+        this.senhaconfir = true;
+
+        btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+
+        $("#icon_senhaconfirm").removeClass("fa-solid fa-eye-slash").addClass("fa-solid fa-eye");
+    }
+    }
   }
