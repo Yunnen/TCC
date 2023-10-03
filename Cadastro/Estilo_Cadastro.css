@@ -20,15 +20,10 @@ section#login{
     transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow: 0px 0px rgba(0, 0, 0, 0.450);
-
     background-color: black;
     width: 60vh;
     height: 100vh;
-
     transition: width 0.5s, height 0.5s;
-
-    
-    
 }
 
 section#login > div#img{
@@ -70,6 +65,20 @@ section#login > div#formulario .text_field > input{
     padding: 10px;
     margin: 10px;
 }
+section#login > div#formulario .text_field > button{
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    transition: 0.3s;
+    width: 10%;
+    float: right;
+    display: flex;
+    position: relative;
+    top: -40px;
+}
+section#login > div#formulario .text_field > button:hover{
+    cursor: pointer;
+}
 section#login > div#formulario .text_field > input:focus{
     border-style: none;
     border-bottom: solid  #d14919 ;
@@ -78,7 +87,6 @@ section#login > div#formulario .text_field > input:focus{
 }
 section#login > div#formulario .btn_login{
    width: 100%;
-   border-radius: 10px;
    background-color: #d14919;
    color: white;
    padding: 5px;
@@ -88,9 +96,9 @@ section#login > div#formulario .btn_login{
    cursor: pointer;
    transition: 0.3s;
    border-style: none;
+    
 }
 section#login > div#formulario .btn_login:hover{
-    width: 100%;
     border-radius: 10px;
     background-color: #d14a199d;
     padding: 5px;
@@ -148,5 +156,15 @@ section#login > div#formulario .cadastro{
     100%{
         transform: translateY(-100%);
     }
+}
+
+.voltar{
+    position: absolute;
+    top: 2;
+    left: 2;
+    color: white;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
