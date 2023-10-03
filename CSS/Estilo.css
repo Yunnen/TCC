@@ -285,6 +285,19 @@ body{
     display: inline-block;
     flex-wrap: wrap;
    }
+   .card2.botão{
+    border-style: none;
+    box-shadow: none;
+   }
+   .card2.botão > button{
+    background-color: #ff5b1b;
+    border-style: solid;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 260px;
+   }
  
    .cardstexto{
     color: white;
