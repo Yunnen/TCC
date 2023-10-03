@@ -169,7 +169,7 @@ body{
    .cards{
     width: 99vmax;
     position: relative;
-    top: 35vmax;
+    top: 30vmax;
     display: flex;
     align-items: center;
     align-self: center;
@@ -225,7 +225,7 @@ body{
    .cards2{
     width: 99vmax;
     position: relative;
-    top: 35vmax;
+    top: 30vmax;
     align-items: center;
     align-self: center;
     justify-content: center;
@@ -285,11 +285,10 @@ body{
     flex-wrap: wrap;
    }
  
-
    .cardstexto{
     color: white;
     position: relative;
-    top: 35vmax;
+    top: 30vmax;
     width: 99vmax;
     text-align: center;
   }
