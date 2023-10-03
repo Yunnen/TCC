@@ -163,7 +163,7 @@ body{
     font-size: 15px;
    }
    .texto > button:hover{
-    
+    cursor: pointer;
    }
 
    .cards{
@@ -297,6 +297,9 @@ body{
     border-radius: 5px;
     font-size: 20px;
     width: 260px;
+   }
+   .card2.botão > button:hover{
+    cursor: pointer;
    }
  
    .cardstexto{
