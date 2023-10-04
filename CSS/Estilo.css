@@ -11,7 +11,7 @@
 body{
     background-color: var(--bg-color);
     background-image: url("https://i.imgur.com/rDrwtiv.png");
-    background-position: center; 
+    background-position: top; 
     background-repeat: repeat-x;
     width: 100vh;
     height: 100vh;   
@@ -323,4 +323,63 @@ body{
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 45px;
+   }
+
+   .sobrenos{
+    background-color:  #1d1d1d;
+    width: 99vmax;
+    height: 500px;
+    position: relative;
+    top: 5vmax;
+   }
+   .sobrenos  > .direta{
+    margin-top: 2%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-right: 200px;
+   }
+   .sobrenos > .direta label{
+    color: white;
+    position: relative;
+    bottom: 0;
+   }
+
+   .sobrenos > .direta img{
+    margin-top: 100px;
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+   }
+
+   .sobrenos > .direta .fundadores{
+     color: #ff5b1b;
+     padding: 5px;
+     font-size: 40px;
+     border-radius: 30px;
+   }
+
+   .sobrenos > .esquerda{
+    height: 100%;
+    width: 40vmax;
+    color: #f2f2f2;
+    font-size: 20px;
+    display: block;
+    margin-left: 10vmax;
+    text-align: start;
+   }
+
+   .sobrenos > .esquerda label{
+    font-size: 30px;
+   }
+   .sobrenos > .esquerda label.titulo{
+    display: block;
+    top: 0;
+    bottom: 2;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 80px;
    }
