@@ -295,8 +295,9 @@ body{
     color: white;
     padding: 15px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     width: 260px;
+    margin-top: 10px;
    }
    .card2.botão > button:hover{
     cursor: pointer;
