@@ -331,6 +331,8 @@ body{
     height: 500px;
     position: relative;
     top: 5vmax;
+    justify-content: center;
+    align-items: center;
    }
    .sobrenos  > .direta{
     margin-top: 2%;
@@ -338,7 +340,7 @@ body{
     justify-content: center;
     align-items: center;
     float: right;
-    margin-right: 200px;
+    margin-right: 180px;
    }
    .sobrenos > .direta label{
     color: white;
@@ -347,18 +349,20 @@ body{
    }
 
    .sobrenos > .direta img{
-    margin-top: 100px;
+    margin-top: 60px;
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     margin-bottom: 50px;
+    margin-left: auto; /* aqui */
+    margin-right: auto;
    }
 
    .sobrenos > .direta .fundadores{
      color: #ff5b1b;
      padding: 5px;
-     font-size: 40px;
+     font-size: 25px;
      border-radius: 30px;
    }
 
@@ -374,6 +378,7 @@ body{
 
    .sobrenos > .esquerda label{
     font-size: 25px;
+    line-height: 40px;
    }
    .sobrenos > .esquerda label.titulo{
     display: block;
@@ -383,4 +388,10 @@ body{
     margin-top: 60px;
     margin-bottom: 70px;
     font-weight: bold;
+   }
+   .sobrenos > .esquerda a{
+    margin-top: 30px;
+    display: block;
+    text-decoration: none;
+    color: #ff5b1b;
    }
