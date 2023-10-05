@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?família=Mulish:wght@400; 600&display=swap');
+
+@font-face {
+  font-family: 'novafont';
+  src: url('https://fonts.googleapis.com/css2?família=Mulish:wght@400; 600&display=swap')
+  format('truetype'), url('fonts/EntezareZohoor2.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,11 +21,12 @@
 }
 body{
     background-color: var(--bg-color);
-    background-image: url("https://i.imgur.com/rDrwtiv.png");
+    background-image: url("https://i.imgur.com/SdzspJC.png");
+    border-color: black;
     background-position: top; 
     background-repeat: repeat-x;
-    width: 100vh;
-    height: 100vh;   
+    width: 99vmax;
+    height: 99vh;   
 }
 .sobre{
    
@@ -132,7 +144,7 @@ body{
   }
   .texto{
     position: relative;
-    top: 100px;
+    top: 80px;
     flex-wrap: wrap;
   }
   .texto > label{
@@ -335,35 +347,74 @@ body{
     align-items: center;
    }
    .sobrenos  > .direta{
-    margin-top: 2%;
+    margin-top: 60px;
     text-align: center;
     justify-content: center;
     align-items: center;
     float: right;
     margin-right: 180px;
+    width: 300px;
    }
    .sobrenos > .direta label{
     color: white;
     position: relative;
     bottom: 0;
+    font-size: 20px;
+    display: block;
+   }
+
+   .sobrenos > .direta label.funcao{
+    margin-top: 20px;
+    font-size: 15px;
+   }
+   .sobrenos > .direta label.nomes{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Mulish', sans-serif;
    }
 
    .sobrenos > .direta img{
-    margin-top: 60px;
+    margin-top: 65px;
     display: block;
-    width: 220px;
-    height: 220px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     margin-left: auto; /* aqui */
     margin-right: auto;
+    border-style: solid;
+    border-color: #ff5b1b;
+    border-width: 1px;
+    padding: 10px;
+    
    }
 
    .sobrenos > .direta .fundadores{
      color: #ff5b1b;
      padding: 5px;
-     font-size: 25px;
+     font-size: 20px;
      border-radius: 30px;
+     font-weight: bold;
+     margin-top: 30px;
+   }
+
+   .sobrenos > .direta button{
+    background-color: #ff5b1b;
+    border-style: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    color: white;
+    font-size: 5px;
+    position: absolute;
+    right: 0;
+   }
+   .sobrenos > .direta button:hover{
+    cursor: pointer;
+   }
+   .sobrenos > .direta button span{
+    font-size: 18px;
+    
    }
 
    .sobrenos > .esquerda{
@@ -377,7 +428,7 @@ body{
    }
 
    .sobrenos > .esquerda label{
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
    }
    .sobrenos > .esquerda label.titulo{
@@ -394,4 +445,71 @@ body{
     display: block;
     text-decoration: none;
     color: #ff5b1b;
+  
+   }
+   .sobrenos > .esquerda .laranjinha{
+    background-color: #ff5b1b;
+    width: 118px;
+    height: 4px;
+    display: flex;
+    bottom: 0;
+    margin-top: 8px;
+   }
+   .sobrenos > .esquerda .link span{
+    font-size: 30px;
+    justify-content: center;
+   }
+
+   .edfinanceira{
+    display: flex;
+    margin-top: 200px;
+    width: 99vmax;
+    height: 5000px;
+   }
+
+   .edfinanceira > .esquerda{
+    float: left;
+    width: 45vmax;
+   }
+
+   .edfinanceira > .esquerda img{
+    width: 690px;    
+    border-radius: 20px;
+   }
+   .edfinanceira > .direita{
+    width: 50vmax;
+   }
+   .edfinanceira > .direita .titulinho{
+    display: block;
+   }
+   .edfinanceira > .direita .titulo{
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+   }
+   .edfinanceira > .direita .textinho{
+    color: white;
+    font-size: 20px;
+    color: #ff5b1b;
+    font-weight: bold;
+   }
+   .edfinanceira > .direita .laranjinha{
+    position: absolute;
+    background-color: #ff5b1b;
+    width: 10px;
+    height: 120px;
+    display: flex;
+    top: 68vmax;
+    margin-left: 160px;
+   }
+   .edfinanceira > .direita .texto{
+    color: #f2f2f2;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: justify;
    }
