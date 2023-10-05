@@ -1,7 +1,7 @@
 @media screen and (min-width:768px) and (max-width: 992px){
     body{
         background-color: var(--bg-color);
-        background-image: url("https://i.imgur.com/rDrwtiv.png");
+        background-image: url("https://i.imgur.com/SdzspJC.png");
         background-position: center; 
         background-repeat: repeat-x;
         width: 100vh;
@@ -21,19 +21,7 @@
     .navbarnav{
         width: 100%;
         /* background-image: linear-gradient(to right , #67009a, #60038e, #fdba07); */
-        
     }
     
-}
-
-@media screen and (min-width:992px) {
-    body{
-        background-color: var(--bg-color);
-        background-image: url("https://i.imgur.com/rDrwtiv.png");
-        background-position: center; 
-        background-repeat: repeat-x;
-        width: 100vh;
-        height: 100vh;   
-    }
-
+    
 }
