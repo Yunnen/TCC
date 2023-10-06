@@ -1,0 +1,15 @@
+create database usuarios;
+
+use usuarios;
+
+create table usuarios(
+ID int(3) auto_increment,
+Nome_Usuario varchar(35),
+Senha_Usuario varchar(9),
+Email_Usuario varchar(50),
+ primary key (ID) 
+);	
+
+select * from usuarios;
+
+drop table usuarios;
