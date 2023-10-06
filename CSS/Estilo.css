@@ -527,7 +527,7 @@ body{
 
    .edfinanceira > .esquerda img{
     width: 800px;    
-    border-radius: 20px;
+    margin-top: 150px;
    }
    .edfinanceira > .direita{
     width: 60vmax;
@@ -575,3 +575,16 @@ body{
     margin-right: 100px;
     line-height: 33px;
    }
+
+   .edfinanceira > .direita button{
+    background-color: #ff5b1b;
+    border-style: solid;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 260px;
+    margin-top: 10px;
+    margin-left: 0;
+   }
+   
