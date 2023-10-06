@@ -591,6 +591,69 @@ body{
     margin-top: 200px;
     background-color:#1d1d1d;
     width: 99vmax;
-    height: 5000px;
+    text-align: center;
+    justify-content: center;
    }
+   .blog > .laranjinha{
+    background-color: #ff5b1b;
+    display: block;
+    width: 200px;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+   }
+
+   .blog > .titulo{
+    color: #f2f2f2;
+    display: block;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 50px;
+    color:#ff5b1b;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+   }
+   .blog > .textinho{
+    color: #f2f2f2;
+    display: block;
+    margin-top: 70px;
+    font-size: 35px;
+    margin-bottom: 50px;
+   }
+   .blog > .noticias{
+    display: flex;
+    margin-top: 0;
+    width: 99vmax;
+    justify-content: center;
+   }
+   .blog >  .noticias .card{
+    background-color: black;
+    width:  325px;
+    height: 364px;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-top: 60px;
+   }
+   .blog >  .noticias .card img{
+    display: flex;
+    width: 100%;
+    height: 218px;
+   }
+   .blog >  .noticias .card .data{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: 5px;
+    display: block;
+    float: right;
+   }
+   .blog >  .noticias .card .titulo{
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    align-self: center;
+   }
+   
    
