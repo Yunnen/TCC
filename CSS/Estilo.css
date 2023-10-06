@@ -515,7 +515,7 @@ body{
 
    .edfinanceira{
     display: flex;
-    margin-top: 360px;
+    margin-top: 260px;
     width: 99vmax;
     height: 5000px;
    }
@@ -526,8 +526,8 @@ body{
    }
 
    .edfinanceira > .esquerda img{
-    width: 800px;    
-    margin-top: 150px;
+    width: 900px;    
+    margin-top: 70px;
    }
    .edfinanceira > .direita{
     width: 60vmax;
