@@ -534,6 +534,7 @@ body{
    }
    .edfinanceira > .direita .titulinho{
     display: flex;
+    font-weight: bold;
    }
    .edfinanceira > .direita .titulo{
     display: block;
@@ -565,7 +566,7 @@ body{
  
    }
    .edfinanceira > .direita .texto{
-    color: #f2f2f2cb;
+    color: #f2f2f2ec;
     font-size: 20px;
     margin: 0;
     padding: 0;
