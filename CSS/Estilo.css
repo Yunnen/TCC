@@ -592,7 +592,6 @@ body{
     background-color:#1d1d1d;
     width: 99vmax;
     text-align: center;
-    justify-content: center;
    }
    .blog > .laranjinha{
     background-color: #ff5b1b;
@@ -634,8 +633,9 @@ body{
     height: 364px;
     padding: 0;
     overflow: hidden;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     margin-top: 60px;
+    border-radius: 8px;
    }
    .blog >  .noticias .card img{
     display: flex;
@@ -645,14 +645,16 @@ body{
    .blog >  .noticias .card .data{
     font-weight: bold;
     margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 20px;
     display: block;
     float: right;
    }
    .blog >  .noticias .card .titulo{
-    margin-top: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 20px;
     display: block;
-    text-align: center;
+    text-align: left;
     align-self: center;
    }
    
