@@ -657,8 +657,73 @@ body{
    }
    
    .infos{
+    margin-top: 200px;
     width: 99vmax;
     background-color: transparent;
-    height: 200px;
+    height: 600px;
+    text-align: center;
+    justify-content: center;
    }
+
+   .infos > .titulo{
+    color: white;
+    font-size: 50px;
+    display: block;
+   }
+   .infos > .textinho{
+    color: white;
+    font-size: 30px;
+    display: block;
+    margin-bottom: 30px;
+   }
+   .infos .laranjinha{
+    display: block;
+    background-color: #ff5b1b;
+    width: 40px;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .infos > .titulo laranja{
+    color: #ff5b1b;
+    font-weight: bold;
+   }
+
+   .infos > .contato{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vmax;
+    background-color: #1d1d1d;
+    height: 300px;
+    justify-content:  space-evenly;
+    align-items: center;
+   }
+   .infos > .contato .contatos{
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+   }
+   .infos > .contato .contatos > button{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: #ff5b1b;
+    border-style: none;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .infos > .contato .contatos > button i{
+    color:white ;
+    font-size: 60px;
+   }
+   .infos > .contato .contatos > .informacao{
+    display: block;
+    color: white;
+    margin-top: 30px;
+   }
+   
    
