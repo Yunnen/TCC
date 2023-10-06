@@ -679,7 +679,7 @@ body{
    .infos .laranjinha{
     display: block;
     background-color: #ff5b1b;
-    width: 40px;
+    width: 60px;
     height: 8px;
     margin-left: auto;
     margin-right: auto;
@@ -724,6 +724,34 @@ body{
     display: block;
     color: white;
     margin-top: 30px;
+    font-size: 20px;
    }
+   .rodape{
+    width: 99vmax;
+    margin-bottom: 1vmax;
    
+   }
+   .rodape img{
+   
+    width: 200px;
+   }
+
+   .rodape .copy{
+   
+    color: white;
+   }
+
+   .rodape .links{
+    text-align: left;
+    color: white;
+    margin-left: 30px;
+   }
+   .rodape .links a{
+    display: flex;
+    
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 5px;
+    float: right;
+   }
    
