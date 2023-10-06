@@ -515,7 +515,7 @@ body{
 
    .edfinanceira{
     display: flex;
-    margin-top: 200px;
+    margin-top: 360px;
     width: 99vmax;
     height: 5000px;
    }
@@ -530,7 +530,7 @@ body{
     border-radius: 20px;
    }
    .edfinanceira > .direita{
-    width: 50vmax;
+    width: 60vmax;
    }
    .edfinanceira > .direita .titulinho{
     display: flex;
