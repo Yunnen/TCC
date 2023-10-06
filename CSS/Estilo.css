@@ -586,4 +586,11 @@ body{
     margin-top: 10px;
     margin-left: 0;
    }
+
+   .blog{
+    margin-top: 200px;
+    background-color:#1d1d1d;
+    width: 99vmax;
+    height: 5000px;
+   }
    
