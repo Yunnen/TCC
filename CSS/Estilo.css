@@ -386,8 +386,61 @@ body{
     border-color: #ff5b1b;
     border-width: 1px;
     padding: 10px;
-    
    }
+   
+   @keyframes slideshow {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    15% {
+        left: -100%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    30% {
+        left: -200%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    45% {
+        left: -300%;
+    }
+
+    55% {
+        left: -300%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -100%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    90% {
+        left: 0%;
+    }
+}
 
    .sobrenos > .direta .fundadores{
      color: #ff5b1b;
@@ -480,30 +533,33 @@ body{
     width: 50vmax;
    }
    .edfinanceira > .direita .titulinho{
-    display: block;
+    display: flex;
    }
    .edfinanceira > .direita .titulo{
     display: block;
-    position: relative;
     color: white;
     font-size: 35px;
     font-weight: bold;
-    margin-bottom: 20px;
+    width: auto;
+    height: 40px;
+   }
+   .edfinanceira > .direita .quebra{
+    width: 100vmax;
+    display: block;
    }
    .edfinanceira > .direita .textinho{
+    display: block;
     color: white;
     font-size: 20px;
     color: #ff5b1b;
     font-weight: bold;
    }
    .edfinanceira > .direita .laranjinha{
-    position: absolute;
+   
     background-color: #ff5b1b;
     width: 10px;
     height: 120px;
-    display: flex;
-    top: 68vmax;
-    margin-left: 160px;
+ 
    }
    .edfinanceira > .direita .texto{
     color: #f2f2f2;
