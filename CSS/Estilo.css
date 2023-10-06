@@ -538,21 +538,24 @@ body{
    .edfinanceira > .direita .titulo{
     display: block;
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     width: auto;
     height: 40px;
+    margin-left: 20px;
    }
    .edfinanceira > .direita .quebra{
     width: 100vmax;
     display: block;
    }
    .edfinanceira > .direita .textinho{
-    display: block;
+    display: flex;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     color: #ff5b1b;
     font-weight: bold;
+    margin-top: 30px;
+    margin-left: 2px;
    }
    .edfinanceira > .direita .laranjinha{
    
@@ -563,9 +566,12 @@ body{
    }
    .edfinanceira > .direita .texto{
     color: #f2f2f2;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     display: block;
     text-align: justify;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    line-height: 25px;
    }
