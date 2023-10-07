@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+img.pessoatriste{
+    width: 300px;
+    display: flex;
+    float: right;
+}
+img{
+    margin-top: 10px;
+    width: 200px;
+    display:flex;
+   
+}
+h1{
+    display: flex;
+    font-size: 25px;
+}
