@@ -47,8 +47,6 @@ $("#email").blur(function() {
 
         $('#email').css('border-color','green');
 
-    
-
     }else{
         
         $('#Eemail').css('display', 'contents');;
@@ -59,7 +57,6 @@ $("#email").blur(function() {
 
         document.getElementById("Eemail").innerHTML = " <i class='fa-regular fa-circle-xmark' style='color: #b21f1f;'></i> Insira um Email Valido";
     
-      
     }
   }
 )
@@ -124,6 +121,7 @@ else{
 });
 
 const Dados = document.getElementById("cadastro");
+
 if (Dados) {
     Dados.addEventListener("submit", async (e) => {
       e.preventDefault();
