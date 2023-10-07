@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head bg-body text-dark>
     
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
     <link rel="stylesheet" type="text/css" href="CSS/Estilo_Query.css" media="screen"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="IMG/Novo Projeto2.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,7 +23,12 @@
 
     <title>JovemP</title>
     <script src="https://kit.fontawesome.com/1c8b0a3809.js" crossorigin="anonymous"></script>
-</head>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  </head>
 <body>
     
     <script src="JS/script.js"></script>
@@ -30,30 +36,30 @@
     
     <div id="seu-href" class="posição"></div>
 
-    <div class="navbarnav" id="navbar">
-      <div class="navbar">
+    <div class="navgbarnav" id="navbar">
+      <div class="navgbar">
         <a class="img" href="#"><img src="IMG/logo-fundo-slogan.png"></a>
-        <div class="dropdown">
-          <button class="dropbtn">Empreendedorismo
+        <div class="dropsdown">
+          <button class="dropsbtn">Empreendedorismo
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="dropdown-content" id="drop">
-            <a href="#">Curso Online - EAD</a>
-            <a href="#">Seu Negócio (MEI)</a>
+          <div class="dropsdown-content" id="drop">
+            <a href="Manutenção/manutencao.html">Curso Online - EAD</a>
+            <a href="Manutenção/manutencao.html">Seu Negócio (MEI)</a>
           </div>
         </div>
 
-        <div class="dropdown">
-          <button class="dropbtn">Conteúdos
+        <div class="dropsdown">
+          <button class="dropsbtn">Conteúdos
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="dropdown-content" id="drop1">
-            <a href="#">Educação Financeira</a>
+          <div class="dropsdown-content" id="drop1">
+            <a href="Manutenção/manutencao.html">Educação Financeira</a>
           </div>
         </div>
 
-        <a href="#sobrenos"></i>Sobre Nós</a>
-        <a href="#">Blog</a>
+        <a href="Manutenção/manutencao.html"></i>Sobre Nós</a>
+        <a href="Manutenção/manutencao.html">Blog</a>
         <a class="login" href="Entrar/login.html">Entrar <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
       </div>
     </div>
@@ -72,13 +78,16 @@
     
     <div class="cards">
       <label>Auxiliamos você para grandes negócios</label>
+
       <div class="card">
+
         <span class="material-symbols-outlined">
           currency_exchange
-          </span>
+        </span>
         <h2>INVISTA EM SEU APRENDIZADO</h2>
         <div class="laranjinha"></div>
         <p>Você vai ter acesso ilimitado ao curso de empreendedorismo, exclusivamente e <b>gratuitamente</b> pra você.</p> 
+
       </div>
 
       <div class="card">
@@ -134,15 +143,45 @@
       
       <div class="direta">
         <label class="fundadores">CEOs</label>
-      <img src="IMG/Sofyy.jpeg">
-        <div class="Ceo Selecionado">
-          <label class="nome">Fabiana Sofya
-            <button><span class="material-symbols-outlined">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="99999">
+              <img src="IMG/Sofyy.jpeg" class="d-block"  alt="...">
+              <label class="nome">Fabiana Sofya</label>
+              <label class="funcao">CEO e Designer</label>
+            </div>
+            <div class="carousel-item " data-bs-interval="99999">
+              <img src="IMG/Guih.jpeg" class="d-block"  alt="...">
+              <label class="nome">Guilherme G. Migliorin</label>
+              <label class="funcao">Programador Full Stack</label>
+            </div>
+            <div class="carousel-item" data-bs-interval="99999">
+              <img src="IMG/Caio.jpeg" class="d-block" alt="...">
+              <label class="nome">Caio Viana</label>
+              <label class="funcao">Arquivista e avaliador</label>
+            </div>
+            <div class="carousel-item" data-bs-interval="99999">
+              <img src="IMG/Gio.jpeg" class="d-block" alt="...">
+              <label class="nome">Giovanni A.</label>
+              <label class="funcao">Analista de Sistemas</label>
+            </div>
+          </div>
+          
+          <button class="esquerda" id="esquerda" onclick="diminuirbotao()" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="material-symbols-outlined">
+              arrow_back
+              </span>
+          </button>
+          
+          <button class="direita" id="direita"  onclick="somarbotão()" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="material-symbols-outlined">
               arrow_forward
-              </span></button>
-          </label>
-        <label class="funcao">CEO e Designer</label>
-      </div>
+              </span>
+          </button>
+
+        </div>
+        
+     
 
       <!--
       <div class="Ceo">
