@@ -166,21 +166,21 @@ body{
     line-height: 30px;
    }
    .texto > button{
-    width: 120px;
-    padding: 10px;
+    width: 130px;
+    padding: 13px;
     margin-top: 10px;
     margin-left: 12vh;
     border-style: solid;
-    border-color: white;
+    border-color:#ff5b1b;
     background-color: transparent;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
    }
    .texto > button:hover{
     cursor: pointer;
-    background-color: white;
-    color: #1d1d1d;
-   text-decoration: underline;
+    background-color:transparent;
+    color:white;
+    text-shadow: 0em 0em 2em #ff5b1b;
    }
 
    .cards{
