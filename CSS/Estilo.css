@@ -23,7 +23,7 @@
 
 body{
     background-color: var(--bg-color) !important;
-    background-image: url("https://i.imgur.com/SdzspJC.png");
+    background-image: url("https://i.imgur.com/d52WsKf.png");
     border-color: black;
     background-size: 99vmax;
     background-position: top; 
@@ -370,7 +370,7 @@ body{
    }
 
    .sobrenos > .direta label.funcao{
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 15px;
    }
    .sobrenos > .direta label.nomes{
@@ -405,7 +405,7 @@ body{
 
    
    .sobrenos > .direta button{
-      top:50%;
+      top: 76%;
       font-size: 30px;
       align-items: center;
       text-align: center;
