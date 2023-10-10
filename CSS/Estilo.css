@@ -552,7 +552,7 @@ body{
     color: white;
     font-size: 30px;
     color: #ff5b1b;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 2px;
    }
    .edfinanceira > .direita .laranjinha{
@@ -626,29 +626,30 @@ body{
     width: 99vmax;
     justify-content: center;
    }
-   .blog >  .noticias .card{
+   .blog > .noticias .carde{
     background-color: black;
-    width:  325px;
-    height: 364px;
+    width:  305px;
+    height: 344px;
     padding: 0;
     overflow: hidden;
-    margin-bottom: 30px;
-    margin-top: 60px;
+    margin: 5px !important;
+    margin-bottom: 30px !important;
+    margin-top: 60px !important;
     border-radius: 8px;
    }
-   .blog >  .noticias .card img{
+   .blog >  .noticias .carde img{
     display: flex;
     width: 100%;
     height: 218px;
    }
-   .blog >  .noticias .card .data{
+   .blog >  .noticias .carde .data{
     font-weight: bold;
     margin-top: 5px;
     margin-right: 20px;
     display: block;
     float: right;
    }
-   .blog >  .noticias .card .titulo{
+   .blog >  .noticias .carde .titulo{
     font-weight: bold;
     margin-top: 40px;
     margin-left: 20px;
