@@ -720,7 +720,7 @@ body{
    
    .blog >  .noticias .carde .titulo a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.719);
+    color: white;
    }
    .blog >  .noticias .carde .titulo a:hover{
     text-decoration: underline;
