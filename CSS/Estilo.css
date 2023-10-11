@@ -614,7 +614,7 @@ body{
     font-size: 30px;
    }
    .blog > .textinho{
-    color: #f2f2f2;
+    color: #f2f2f2 !important;
     display: block;
     margin-top: 10px;
     font-size: 45px;
@@ -625,26 +625,65 @@ body{
     margin-top: 0;
     width: 99vmax;
     justify-content: center;
+    color: white;
    }
    .blog > .noticias .carde{
     background-color: black;
     width:  305px;
-    height: 344px;
+    height: 384px;
     padding: 0;
     overflow: hidden;
     margin: 5px !important;
     margin-bottom: 30px !important;
     margin-top: 60px !important;
     border-radius: 8px;
+    text-align: left;
    }
-   .blog >  .noticias .carde img{
-    display: flex;
-    width: 100%;
+   .blog > .noticias .carde .img{
+    background-color: white;
+    display: flex !important;
+    width: auto;
     height: 218px;
-    border-bottom: 2px solid #ff5b1b;
+    border-bottom: 4px solid #ff5b1b;
+    background-image: url('../IMG/noti1.jpg');
+    background-repeat: no-repeat;
+    background-size: 318px;
+    background-position: center; 
+    background-repeat: repeat-x;
+    text-align: right;
+   }
+   
+   .blog > .noticias .carde .img .like{
+    display: flex;
+    float: right;
+    position: relative;
+    bottom: 0;
+    height: 20px;
+    margin-left: 268px;
+    background-color: transparent;
+    border-style: none;
+   }
+   .blog > .noticias .carde .img .like img{
+    display: flex;
+    float: right;
+    height: 40px;
+   }
+   .blog >  .noticias .carde .tags{
+    margin-top: 10px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20px;
+    color: #ff5b1b;
+    font-weight: bold;
+   }
+   .blog >  .noticias .carde .descricao{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 13px;
    }
    .blog >  .noticias .carde .data{
-    font-weight: bold;
+    color: #f2f2f2a4;
+    font-size: 15px;
     margin-top: 5px;
     margin-right: 20px;
     display: block;
@@ -653,10 +692,15 @@ body{
    .blog >  .noticias .carde .titulo{
     font-weight: bold;
     margin-top: 40px;
-    margin-left: 20px;
     display: block;
     text-align: left;
     align-self: center;
+    margin-bottom: 5px;
+    height: 30px;
+    text-align: left;
+    align-items: left;
+    margin-left: 20px;
+    margin-right: 2px;
    }
    
    .infos{
