@@ -607,18 +607,18 @@ body{
     color: #f2f2f2;
     display: block;
     margin-top: 90px;
-    margin-bottom: 15px;
+    margin-bottom: 3px;
     color:#ff5b1b;
     display: block;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
    }
    .blog > .textinho{
     color: #f2f2f2 !important;
     display: block;
-    margin-top: 10px;
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
    }
    .blog > .noticias{
     display: flex;
