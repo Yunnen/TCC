@@ -626,6 +626,7 @@ body{
     width: 99vmax;
     justify-content: center;
     color: white;
+    margin-bottom: 100px;
    }
    .blog > .noticias .carde{
     background-color: black;
