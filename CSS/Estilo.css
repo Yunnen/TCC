@@ -626,7 +626,7 @@ body{
     width: 99vmax;
     justify-content: center;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
    }
    .blog > .noticias .carde{
     background-color: black;
@@ -724,7 +724,9 @@ body{
     color: white;
    }
    .blog >  .noticias .carde .titulo a:hover{
-    text-decoration: underline;
+  
+
+    border-bottom: 2px solid #ff5b1b;
    }
 
    .infos{
