@@ -684,12 +684,12 @@ body{
    .blog >  .noticias .carde .data{
     color: #f2f2f2a4;
     font-size: 13px;
-    margin-top: 5px;
     margin-right: 20px;
-    display: block;
+    display: flex;
     float: right;
-    margin-top: 20px;
+    margin-top: 15px;
    }
+
    .blog >  .noticias .carde .titulo{
     font-weight: bold;
     margin-top: 40px;
@@ -703,7 +703,29 @@ body{
     margin-left: 20px;
     margin-right: 2px;
    }
+
+   .blog >  .noticias .carde .salvar{
+    margin-left: 20px;
+    margin-top: 15px;
+    display: flex;
+    font-size: 12px;
+    color: #f2f2f2a4;
+   }
+   .blog >  .noticias .carde .salvar button{
+    background-color: transparent;
+    border-style: none;
+    color: rgba(255, 255, 255, 0.719);
+    margin-right: 5px;
+   }
    
+   .blog >  .noticias .carde .titulo a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.719);
+   }
+   .blog >  .noticias .carde .titulo a:hover{
+    text-decoration: underline;
+   }
+
    .infos{
     margin-top: 200px;
     width: 99vmax;
