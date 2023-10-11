@@ -683,11 +683,12 @@ body{
    }
    .blog >  .noticias .carde .data{
     color: #f2f2f2a4;
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 5px;
     margin-right: 20px;
     display: block;
     float: right;
+    margin-top: 20px;
    }
    .blog >  .noticias .carde .titulo{
     font-weight: bold;
