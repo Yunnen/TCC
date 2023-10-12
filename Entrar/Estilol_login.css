@@ -201,7 +201,7 @@ section#login > div#formulario .cadastro{
     float: right;
     display: flex;
     position: relative;
-    top: -35px;
+    top: -47px;
 }
 
 section#login > div#formulario .text_field > button:hover{
