@@ -44,7 +44,7 @@
     }catch (PDOException $e) {
     $retorna = ['status' => false, 'msg' => "<h1>Ocorreu um erro ao cadastrar: " . $e->getMessage() . "</h1>"];
     }
-}else{$retorna = ['status' => false, 'msg' => "<h1>Email já registrado</h1>"];}
+}else{$retorna = ['status' => false, 'msg' => "<h1 style='color: #b21f1f'><i class='fa-regular fa-circle-xmark'></i>Email já registrado</h1>"];}
 }
 
     header('Content-Type: application/json');
