@@ -1,6 +1,8 @@
 senha = true;
 senhaconfir = true;
 
+var image = document.getElementById("olho");
+
 function MostrarSenha(){
         
         var btn = document.getElementById("senha");
@@ -10,14 +12,16 @@ function MostrarSenha(){
         btn.type = "text";
         this.senha = false;
 
-        $("#icon_senha").removeClass("fa-solid fa-eye").addClass("fa-solid fa-eye-slash");
+        image.src = "../IMG/eye-off 16.svg";
+
 
     }else{
         
         btn.type = "password"
         this.senha = true;
 
-        $("#icon_senha").removeClass("fa-solid fa-eye-slash").addClass("fa-solid fa-eye");
+        image.src = "../IMG/eye.svg";
+
 
     }
     }
@@ -43,15 +47,15 @@ if (Dados) {
        
         console.log(resposta['msg']);
 
-        document.getElementById("msg").innerHTML = "";
+        document.getElementById("msg").innerHTML = null;
 
       }else if(resposta['problema'] == 'email') {
         document.getElementById("msgemail").innerHTML = resposta['msg'];
 
-        document.getElementById("msgesenha").innerHTML = "";
+        document.getElementById("msgesenha").innerHTML = null;
       }else{
 
-        document.getElementById("msgemail").innerHTML = "";
+        document.getElementById("msgemail").innerHTML = null;
 
         document.getElementById("msgsenha").innerHTML = resposta['msg'];
       }
