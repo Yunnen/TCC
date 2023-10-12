@@ -5,11 +5,11 @@
     include_once "../Banco_de_Dados/conexao.php";
 
     if(empty($dados['email'])){
-        $retorna = ['status' => false, 'msg' => "Insira um Email"];
+        $retorna = ['status' => false,'problema'=> 'email', 'msg' => "<h1 class='msg'>Insira um Email</h1>"];
     }elseif(!filter_var($dados['email'], FILTER_VALIDATE_EMAIL)){
-        $retorna = ['status' => false, 'msg' => "Insira um Email Valido"];
+        $retorna = ['status' => false,'problema'=> 'email', 'msg' => "<h1 class='msg'>Insira um Email Valido</h1>"];
     }elseif(empty($dados['senha'])){
-        $retorna = ['status' => false, 'msg' => "Insira uma Senha"];
+        $retorna = ['status' => false,'problema'=> 'senha', 'msg' => "<h1 class='msg'>Insira uma Senha</h1>"];
     }else{
         
             $search = $conexão->prepare("SELECT * FROM usuarios WHERE Email_usuario = :Email");
@@ -30,7 +30,7 @@
                 $search->execute();
 
             if ($search->rowCount() == 0) {
-                $retorna = ['status'=> false, 'msg'=> "Senha Incorreta !"];
+                $retorna = ['status'=> false, 'msg'=> "<h1 class='msg'>Senha não coicide com essa conta</h1>"];
             }else{
                 $retorna = ['status'=> true, 'msg'=> "Bem VINDO!"];
             }
