@@ -20,18 +20,21 @@
             <h1>Acesse sua conta</h1>
             <h1 class="subtitulo">Sua jornada empreendedora começa aqui.</h1>
             <form id="entrar" method="POST">
+
         <div class="text_field">
             <label for="email">E-mail</label>
             <input type="text" name="email" placeholder="">
-            <h1 class="msg"></h1>
+            <h1 id="msgemail" class="msgdorme"></h1>
         </div>
 
         <div class="text_field">
             <label for="senha">Senha</label>
             <input id="senha" type="password" name="senha" placeholder="********">
             <button class="SenhaConfirma" onclick="MostrarSenha()"><img src="../IMG/eye.svg"></button>
-            <h1 class="msg"></h1>
+            <h1 id="msgsenha" class="msgdorme"></h1>
         </div>
+
+
         <a class="esqueceu" href="url">Esqueci minha senha</a>
         <div class="conectar"><input type="checkbox"> Mantenha-me conectado</div>
         
