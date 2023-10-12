@@ -43,8 +43,17 @@ if (Dados) {
        
         console.log(resposta['msg']);
 
-      } else {
-        console.log(resposta['msg']);
+        document.getElementById("msg").innerHTML = "";
+
+      }else if(resposta['problema'] == 'email') {
+        document.getElementById("msgemail").innerHTML = resposta['msg'];
+
+        document.getElementById("msgesenha").innerHTML = "";
+      }else{
+
+        document.getElementById("msgemail").innerHTML = "";
+
+        document.getElementById("msgsenha").innerHTML = resposta['msg'];
       }
     });
 
