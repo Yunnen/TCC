@@ -48,13 +48,13 @@ section#login > div#formulario{
 section#login > div#formulario h1{
     color:white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 section#login > div#formulario > h1.subtitulo{
     font-size: 20px;
     color:#f2f2f2d3;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     margin-top: 20px;
  }
 
@@ -89,10 +89,12 @@ section#login > div#formulario .text_field > input{
     margin: 10px;
     margin-top: 5px;
 }
+
 section#login > div#formulario .text_field > input:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
 }
+
 section#login > div#formulario .btn_login{
     width: 100%;
     background-color: #d14919;
@@ -106,6 +108,7 @@ section#login > div#formulario .btn_login{
     border-style: none;
      
  }
+
  section#login > div#formulario .btn_login:hover{
      border-radius: 10px;
      background-color: #c9491b9d;
@@ -125,14 +128,59 @@ section#login > div#formulario .esqueceu{
     padding-bottom: 3px;
     margin-right: 15px;
 }
+section#login > div#formulario .conectar{
+    display: flex;
+    align-self: center;
+    font-size: 14px;
+    float: left;
+    color: white;
+    text-decoration: none;
+   
+}
+section#login > div#formulario .conectar input{
+    margin-right: 10px;
+    background-color: #d14919;
+    font-size: 30px;
+    width: 1px;
+    border-style: none;
+    margin-right: 30px;
+}
+
+section#login > div#formulario .conectar input:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+  input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    border: 2px solid #d14919;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-bottom: 4px;
+  }
+
 section#login > div#formulario .cadastro{
     width: 100%;
     border-radius: 10px;
     color: white;
     padding: 5px;
     font-size: 14px;
-    margin-left: 25px;
-    margin-right: auto;
+    margin-left: 40px;
+    margin-bottom: 120px;
  }
 
  section#login > div#formulario .cadastro > a{
@@ -153,6 +201,7 @@ section#login > div#formulario .cadastro{
     top: -43px;
     margin-right: 10px;
 }
+
 section#login > div#formulario .text_field > button:hover{
     cursor: pointer;
 }
