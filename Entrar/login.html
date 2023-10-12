@@ -16,26 +16,21 @@
     <section id="login">
         <div id="img">
         </div>
-        
-        <div class="alert">
-            <h1 class="msg">Insira um email</h1>
-        </div>
-
-
         <div id="formulario">
-            <h1>Seja Bem-Vindo!</h1>
+            <h1>Acesse sua conta</h1>
+            <h1 class="subtitulo">Sua jornada empreendedora começa aqui.</h1>
             <form id="entrar" method="POST">
-            
         <div class="text_field">
-            <label for="email">Email:</label>
-            <input type="text" name="email" placeholder="Insira seu Email">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" placeholder="">
+            <h1 class="msg"></h1>
         </div>
 
         <div class="text_field">
-            <label for="senha">Senha:</label>
-            <input id="senha" type="password" name="senha" placeholder="Insira sua senha">
-
-            <button class="SenhaConfirma" onclick="MostrarSenha()"><i id="icon_senha" class="fa-solid fa-eye"></i></button>
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" name="senha" placeholder="********">
+            <button class="SenhaConfirma" onclick="MostrarSenha()"><img src="../IMG/eye.svg"></button>
+            <h1 class="msg"></h1>
         </div>
         <a class="esqueceu" href="url">Esqueci minha senha</a>
         
