@@ -20,18 +20,15 @@ section#login{
     transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow: 0px 0px rgba(0, 0, 0, 0.450);
-
     background-color: black;
     width: 60vh;
     height: 100vh;
-
     transition: width 0.5s, height 0.5s;
-    
 }
 
 section#login > div#img{
     display: block;
-    background: url(../teste_logo_laranja.png) no-repeat;
+    background: url(../fundo_login_teste.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -51,11 +48,12 @@ section#login > div#formulario h1{
     font-size: 35px;
 }
 
-section#login > div#formulario > h1.subtitulo{
+section#login > div#formulario > label.subtitulo{
     font-size: 20px;
-    color:#f2f2f2d3;
+    color:#ffffff;
     margin-bottom: 60px;
     margin-top: 20px;
+    line-height: 30px;
  }
 
 section#login > div#formulario .text_field{
