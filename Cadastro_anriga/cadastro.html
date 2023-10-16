@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="Estilo_Cadastro.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="Estilo_Cadastro_Query.css" media="screen"/>
+    
+    <script src="https://kit.fontawesome.com/1c8b0a3809.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <title>Login</title>
+
+</head>
+<body>
+    <img id="loading" src="../icon_load.png" alt="Updating ..." style="display: none;" />
+    <section id="login">
+        <div id="img">
+        </div>
+        <div id="formulario">
+            <h1>Cadastra-se Agora</h1><br>
+            <form method="POST" id="cadastro">
+        <div id="Erros"></div>
+        
+        <div class="text_field">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira seu Nome">
+            <text class="alert" id="Enome" ></text>
+            <text class="check" id="Cnome" ><i class="fa-regular fa-circle-check" style="color: #4fb828;"></i></text>
+        </div>
+                
+
+        <div class="text_field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Insira seu Email">
+            
+            <text class="alert" id="Eemail" ></text>
+            <text class="check" id="Cemail" ><i class="fa-regular fa-circle-check" style="color: #4fb828;"></i></text>
+        </div>
+
+        <div class="text_field">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Insira sua senha">
+            
+            <text class="alert" id="Esenha" ></text>
+            <text class="check" id="Csenha" ><i class="fa-regular fa-circle-check" style="color: #4fb828;"></i></text>
+            
+            <button class="Senha" onclick="MostrarSenha()"><i id="icon_senha" class="fa-solid fa-eye"></i></button>
+        </div>
+
+        <div class="text_field">
+            <label for="confirmar">Confirme sua Senha:</label>
+            <input type="password" id="senhaconfir" name="confirmar" placeholder="Confirmar sua senha">
+            <text class="alert" id="Esenhaconfir" ><text><i class="fa-regular fa-circle-xmark" style="color: #b21f1f;"></i> As senhas não coincidem</text></text>
+            <text class="check" id="Csenhaconfir"><i class="fa-regular fa-circle-check" style="color: #4fb828;"></i></text>
+            
+            <button class="SenhaConfirma" onclick="MostrarConfirme()"><i id="icon_senhaconfirm" class="fa-solid fa-eye"></i></button>
+        </div>
+    
+        <button id="btn_cadastro" class="btn_login">Cadastrar-se</button>
+        <div class="cadastro">Já Possui conta?
+            <a href="../Entrar/login.html" target="_self">Entrar</a>
+        </div>
+            </form>
+        </div>
+
+    </section>
+    <a class="voltar" href="../index.html"><i class="fa-solid fa-chevron-left"></i></a>.
+    <script src="custom.js"></script>
+</body>
+</html>
