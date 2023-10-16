@@ -1,170 +1,138 @@
 *{
+    padding: 0;
+    margin: 0;
     font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
 }
 
 body{
     background-color: black;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vh;
-}
-section#login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    box-shadow: 0px 0px rgba(0, 0, 0, 0.450);
-    background-color: black;
-    width: 60vh;
-    height: 100vh;
-    transition: width 0.5s, height 0.5s;
-}
-
-section#login > div#img{
-    display: block;
-    background: url(../teste_logo2.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-}
-
-section#login > div#formulario{
-    display: block;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+    color: white;
     justify-content: center;
     align-items: center;
-}
-section#login > div#formulario h1{
-    color: white;
-    padding: 20px;
-    font-size: 30px;
+    display: flex;
 }
 
-section#login > div#formulario .text_field{
-    padding: 20px;
-    color: white;
+section.cadastro{
+    text-align: center;
+    width: 465px;
+    height: auto;
+    
 }
-section#login > div#formulario .text_field > input{
+
+section.cadastro > form img{
+    width: 200px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+section.cadastro > form .etapa {
+   display: flex;
+}
+section.cadastro > form h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+ }
+
+ section.cadastro > form .subtitulo {
+    margin-bottom: 40px;
+    line-height: 25px;
+ }
+ 
+section.cadastro > form .etapa label{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color:#1d1d1d;
+    display: inline-block;
+    height: 10px;
+    width: 100%;
+}
+
+section.cadastro > form .etapa .um{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+section.cadastro > form .etapa .quatro{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section.cadastro > form .text_field input{
     color: white;
     background-color: transparent;
     border-style: none;
     font-size: 15px;
-    float: right;
-    margin-left: 10px;
-    border-bottom: solid  gray  ;
     transition: 0.3s;
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-}
-section#login > div#formulario .text_field > button{
-    color: white;
+    width: 95%;
+    margin-top: 10px;
+    padding: 15px;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     background-color: transparent;
-    border-style: none;
-    transition: 0.3s;
-    width: 10%;
-    float: right;
-    display: flex;
-    position: relative;
-    top: -40px;
+    border: 2px solid #d14919;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
 }
-section#login > div#formulario .text_field > button:hover{
-    cursor: pointer;
+section.cadastro > form .text_field{
+    text-align: left;
+    margin-bottom: 20px;
 }
-section#login > div#formulario .text_field > input:focus{
-    border-style: none;
-    border-bottom: solid  #d14919 ;
+
+section.cadastro > form input:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
 }
-section#login > div#formulario .btn_login{
-   width: 100%;
-   background-color: #d14919;
-   color: white;
-   padding: 5px;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   font-size: 18px;
-   cursor: pointer;
-   transition: 0.3s;
-   border-style: none;
-    
-}
-section#login > div#formulario .btn_login:hover{
-    border-radius: 10px;
-    background-color: #d14a199d;
-    padding: 5px;
+
+section.cadastro > form  .btn_login{
+    width: 100%;
+    background-color: #d14919;
+    color: white;
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 18px;
     cursor: pointer;
+    transition: 0.3s;
+    border-style: none;
+     border-radius: 10px;
  }
-
-section#login > div#formulario .esqueceu{
-    font-size: 14px;
-    border-radius: 10px;
-    color: white;
-    padding: 5px;
-    float: right;
- }
-section#login > div#formulario .cadastro{
-    width: 100%;
-    border-radius: 10px;
-    color: white;
-    padding: 5px;
-    font-size: 14px;
-    margin-left: 140px;
-    margin-right: auto;
- }
- section#login > div#formulario .alert{
-    font-size: 13px;
-    color: red;
-    display: none;
-    width: 20px;
- }
- section#login > div#formulario .check{
-    font-size: 14px;
-    display: none;
-    width: 20px;
- }
-
- section#login > div#formulario .cadastro > a{
-    color: #d14919;
- }
-
- section#login > div#formulario > div#Erros{
-    color: #d14919;
- }
-
-#loading{
-    animation: quica .4s cubic-bezier(.53, -0.03, .67, 1.06);
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-@keyframes quica{
-    0%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(-100%);
-    }
-}
-
-.voltar{
+ section.cadastro > form .btn_login:hover{
+     border-radius: 10px;
+     background-color: #d15e34;;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 18px;
+     cursor: pointer;
+  }
+  .voltar{
     position: absolute;
-    top: 2;
-    left: 2;
-    color: white;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.705);
     z-index: 1;
     margin-top: 20px;
     margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    padding-bottom: 1px;
 }
+
+.voltar:hover{
+    border-bottom: 1px solid #ff5b1b;
+}
+
+section.cadastro > form .confirme{
+    color: white;
+    border-style: none;
+    width: 10%;
+    height: 0px;
+    float: right;
+    position: relative;
+    display: flex;
+    margin-bottom: 25px;
+}
+
 
