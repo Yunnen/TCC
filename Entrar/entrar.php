@@ -19,7 +19,7 @@
             $search->execute();
 
             if ($search->rowCount() == 0) {
-                $retorna = ['status'=> false, 'msg'=> "Email não vinculado com uma conta, deseja fazer um cadastro?"];
+                $retorna = ['status'=> false, 'msg'=> "<h1 class='msg'>Email não vinculado com uma conta, deseja fazer um cadastro?</h1>"];
             }
             else{
                 $search = $conexão->prepare("SELECT * FROM usuarios WHERE Email_usuario = :Email AND Senha_usuario = :senha");
