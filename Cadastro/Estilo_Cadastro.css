@@ -10,13 +10,14 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    height: auto;
 }
 
 section.cadastro{
     text-align: center;
     width: 465px;
     height: auto;
-    
+
 }
 
 section.cadastro > form img{
@@ -92,18 +93,18 @@ section.cadastro > form  .btn_login{
     color: white;
     padding: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     font-size: 18px;
     cursor: pointer;
     transition: 0.3s;
     border-style: none;
-     border-radius: 10px;
+    border-radius: 10px;
  }
  section.cadastro > form .btn_login:hover{
      border-radius: 10px;
      background-color: #d15e34;;
      margin-top: 20px;
-     margin-bottom: 20px;
+    margin-bottom: 80px;
      font-size: 18px;
      cursor: pointer;
   }
@@ -136,3 +137,10 @@ section.cadastro > form .confirme{
 }
 
 
+.rodapé{
+    color: rgba(255, 255, 255, 0.705);;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
