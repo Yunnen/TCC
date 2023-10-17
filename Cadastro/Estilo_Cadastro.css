@@ -101,10 +101,18 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
- background-color: transparent;
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+    box-shadow: #000 !important;
+    background-color: black !important;
 }
+input:-webkit-autofill::selection{
+    background-color: rgb(30, 30, 238) !important;
+}
+
+
+
+
 
 section.cadastro > form  .btn_login{
     width: 100%;
