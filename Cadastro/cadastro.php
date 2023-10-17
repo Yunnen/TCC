@@ -7,13 +7,13 @@
 
 
     if (empty($dados['nome']) || strlen($dados['nome']) < 3 || strlen($dados['nome']) > 40) {
-        $retorna = ['status' => false, 'msg' => "Nome"];
+        $retorna = ['status' => false, 'msg' => ""];
     }elseif(empty($dados['email']) || !filter_var($dados['email'], FILTER_VALIDATE_EMAIL)){
-        $retorna = ['status' => false, 'msg' => "Email"];
-    }elseif(empty($dados['senha']) || strlen($dados['senha']) < 8 || strlen($dados['senha']) > 20){
+        $retorna = ['status' => false, 'msg' => ""];
+    }elseif(empty($dados['senha']) || strlen($dados['']) < 8 || strlen($dados['senha']) > 20){
         $retorna = ['status' => false, 'msg' => "Senha"];
     }elseif($dados['confirmar'] != $dados['senha']){
-        $retorna = ['status' => false, 'msg' => "Senha2"];
+        $retorna = ['status' => false, 'msg' => ""];
     }else{
         
         $search = $conexão->prepare("SELECT * FROM usuarios WHERE Email_usuario = :Email");
