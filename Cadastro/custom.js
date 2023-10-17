@@ -47,10 +47,9 @@ if (Dados) {
         console.log('Boa');
 
       } else {
-       
-        console.log(resposta['msg']);
 
-      
+        document.getElementById("erroemail").innerHTML = resposta['msg'];
+        console.log(resposta['msg']);
       }
     });
 
@@ -111,7 +110,7 @@ $("#nome").blur(function() {
 if(nome.length < 3 || nome.length > 40){
 
 
-  document.getElementById("erronome").innerHTML = "<i class='fa-regular fa-circle-xmark' style='color: #b21f1f;'></i> Seu nome deve conter de 3 a 40 caracteres";
+  document.getElementById("erronome").innerHTML = " Seu nome deve conter de 3 a 40 caracteres";
 
   $('#nome').css('border-color','red');
 
@@ -169,7 +168,7 @@ if(validação == true){
   
   $('#email').css('border-color','red');
 
-  document.getElementById("erroemail").innerHTML = " <i class='fa-regular fa-circle-xmark' style='color: #b21f1f;'></i> Insira um Email Valido";
+  document.getElementById("erroemail").innerHTML = "Insira um Email Valido";
 
  
   if(email == 0){
@@ -191,7 +190,7 @@ var senha = $(this).val()
 
 if(senha.length < 8 || senha.length > 20){
 
-document.getElementById("errosenha").innerHTML = "<i class='fa-regular fa-circle-xmark' style='color: #b21f1f;'></i> Sua senha deve conter de 8 a 20 caracteres";
+document.getElementById("errosenha").innerHTML = "Sua senha deve conter de 8 a 20 caracteres";
 
 $('#senha').css('border-color','red');
 
@@ -225,7 +224,7 @@ var senhaconfir = $(this).val()
 var senha = $("#senha").val();
 
 if(senhaconfir != senha){
-document.getElementById("errosenha2").innerHTML = "<i class='fa-regular fa-circle-xmark' style='color: #b21f1f;'></i> As senhas devem coencidir";
+document.getElementById("errosenha2").innerHTML = "As senhas devem coencidir";
 
 
 $('#senhaC').css('border-color','red');
@@ -240,7 +239,7 @@ if(senhac == 0){
 
 }else if(senhaconfir == ""){
 
-document.getElementById("errosenha2").innerHTML = "<i class='fa-regular fa-circle-xmark' style='color: #b21f1f;'></i> Confirme sua senha";
+document.getElementById("errosenha2").innerHTML = "Confirme sua senha";
 
 
 if(senhac == 0){
