@@ -110,7 +110,7 @@ $("#nome").blur(function() {
 if(nome.length < 3 || nome.length > 40){
 
 
-  document.getElementById("erronome").innerHTML = " Seu nome deve conter de 3 a 40 caracteres";
+  document.getElementById("erronome").innerHTML = "Insira um nome e um sobrenome";
 
   $('#nome').css('border-color','red');
 
@@ -168,7 +168,7 @@ if(validação == true){
   
   $('#email').css('border-color','red');
 
-  document.getElementById("erroemail").innerHTML = "Insira um Email Valido";
+  document.getElementById("erroemail").innerHTML = "Insira um e-mail válido";
 
  
   if(email == 0){
