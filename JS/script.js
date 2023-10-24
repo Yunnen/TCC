@@ -1,14 +1,40 @@
-var contagem = 0;
 
-var btndireita = document.getElementById("#direita");
+ var infos = false;
+ function logado(){
+    $('#entrar').css('display','none');
+ }
 
-var btnesquerda = document.getElementById("#esquerda");
+ function MostrarInfos(){
+    if(infos == false){
 
+        $('#logadoinfo').css('display','block');
 
-function somarbotão(){
-   
-}
-function diminuirbotao(){
-    
-   
+        infos = true;
+    }else{
+        $('#logadoinfo').css('display','none');
+
+        infos = false;
+    }
+ }
+ 
+ function esconder(){
+    $('#logadoinfo').css('display','none');
+
+    infos = false;
+ }
+
+ function deslogar() {
+    // Executar o código da página controle.php
+    $.ajax({
+        url: 'controle.php',
+        type: 'POST', // Ou 'GET' dependendo da sua necessidade
+        success: function(data) {
+            // Código executado com sucesso
+            // Agora, recarregar a página index
+            window.location.reload();
+        },
+        error: function() {
+            // Lida com erros, se houver algum
+        }
+    });
 }
