@@ -5,7 +5,7 @@ use usuarios;
 create table usuarios(
 ID int(3) auto_increment,
 Nome_Usuario varchar(35),
-Senha_Usuario varchar(9),
+Senha_Usuario varchar(20),
 Email_Usuario varchar(50),
  primary key (ID) 
 );	
