@@ -38,3 +38,14 @@
         }
     });
 }
+
+function acessarcursos(){
+    const logado = document.getElementById("logado");
+    const display = window.getComputedStyle(logado, null).display;
+    console.log(display);
+
+    if(display == 'none'){
+        window.location.href = "Cadastro/cadastro.html";
+    }
+    
+}
