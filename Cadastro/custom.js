@@ -11,6 +11,12 @@ var senhac = 0;
 
 const Dados = document.getElementById("cadastro");
 
+const zoio = document.getElementById("zoio");
+if (zoio){
+    zoio.addEventListener("click", async (e) => {
+      e.preventDefault();})
+ } 
+
 if (Dados) {
     Dados.addEventListener("submit", async (e) => {
       e.preventDefault();
@@ -25,24 +31,9 @@ if (Dados) {
       const resposta = await dados.json();
   
       if (resposta['status'] == true) {
-
-                 $('#loading')
-                 .css({
-                    position: "fixed", // fixa o elemento
-                    zIndex: "9", // coloca o elemento por cima dos outros
-                    top: "50%", // move 50% do topo
-                    left: "50%", // move 50% da esquerda
-                    transform: "translate(-50%, -50%)" // centraliza
-                 })
-                 .show();
-                 $('#login').css({
-                    opacity: "0.1",
-                    trasition: "1s"
-                 })
-
         setTimeout(function() {
             $(location).attr('href', '../Entrar/login.html');
-        }, 5000);
+        }, 10000);
        
         console.log('Boa');
 
