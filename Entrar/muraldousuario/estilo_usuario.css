@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Arial,sans-serif;
+}
+body{
+    background-color: black !important;;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+}
+.navbar{
+    position: absolute !important;;
+    top:0 !important;;
+    display: block !important;;
+    width:100vmax !important;;
+    height: auto !important;;
+    background-color: black !important;
+}
+.navgbar{
+  align-items: center  !important;
+  width: auto  !important;
+  background-color: transparent;
+  height: auto!important;
+  margin: 0!important;
+  display: flex!important;
+  height: 90px!important;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)!important;
+}
+.navgbar img{
+  height: 80px;
+  margin-right: 30px;
+  padding: 10px;
+}
+
+.navgbar a.img:hover{
+border-bottom:  none !important;
+}
+
+.navgbar a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 9px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
+.navgbar a:hover{
+  border-bottom: 2px solid #ff5b1b !important;
+  color: #f2f2f2 !important;
+  animation-duration: 5s;
+}
+
+.navgbar .login{
+  margin-left: 30px !important;
+}
+
+.navgbarnav{
+  width: 99vmax !important;
+  /* background-image: linear-gradient(to right , #67009a, #60038e, #fdba07); */
+}
+
+.img{
+  left: 0;
+}
+
+.logado button{
+margin-top: 120px;
+margin-right: 25px;
+display: none;
+}
+
+.logado{
+position: absolute;
+right: 0;
+padding: 0;
+margin: 0;
+border-radius: 50%;
+display: none;
+}
+.logadoifo .fotologado{
+margin-left: 5px;
+margin-right: 10px;
+width: 40px !important;;
+height: 40px !important;;
+border-radius: 50%;
+margin: 0;
+padding: 0;
+float: left;
+}
+.logadoifo  .item.fotocomlogin{
+width: 100%;
+text-align: left;
+}
+.logadoifo  .item.fotocomlogin email{
+color: gray;
+font-size: 13px;
+display: block;
+margin: 0;
+margin-left: 50px;
+}
+.logadoifo  .item.fotocomlogin nome{
+margin-left: 10px;
+}
+
+.logado:hover{
+cursor: pointer;
+}
+
+.logadoifo{
+position: absolute;
+right: 0;
+padding: 0;
+margin: 0;
+margin-top: 210px;
+margin-right: 100px;
+width: 300px;
+height: auto;
+display: none;
+justify-content: left;
+background-color: #1d1d1d;
+text-align: left;
+color: white;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)!important;
+border-radius: 10px;
+z-index: 10;
+}
+
+
+.logadoifo > .item{
+display: block;
+padding: 5px;
+background-color: transparent;
+border: none;
+color: white;
+margin-right: auto;
+width: 120px;
+}
+
+
+.login{
+  position: absolute;
+  right: 0;
+  border-style:solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.navgbar .login:hover
+{
+border-style: solid;
+border-color: #ff5b1b;
+background-color:#ff5b1b;
+text-decoration: none !important;
+color: white; 
+}
+
+.dropsdown {
+  float: left  !important;;
+  overflow: hidden  !important;;
+}
+.dropsdown .dropsbtn {
+  font-size: 16px  !important;;
+  border: none  !important;;
+  outline: none  !important;;
+  color: white  !important;;
+  padding: 14px 16px  !important;;
+  background-color: black  !important;;
+  font-family: inherit  !important;; /* Important for vertical align on mobile phones */
+  margin: 0  !important;; /* Important for vertical align on mobile phones */
+}
+
+.posição{
+  position: absolute  !important;;
+  top: 600px  !important;;
+}
+
+
+.login:hover{
+  text-decoration: none  !important;
+}
+
+/* Dropdown content (hidden by default) */
+.dropsdown-content {
+  display: none  !important;;
+  position: absolute  !important;;
+  min-width: 160px  !important;;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)  !important;;
+  z-index: 1  !important;;
+  background-color: black;
+}
+
+/* Links inside the dropdown */
+.dropsdown-content a {
+  float: none  !important;;
+  color: white  !important;;
+  padding: 12px 16px  !important;;
+  text-decoration: none  !important;;
+  display: block  !important;;
+  text-align: left  !important;;
+}
+/* Show the dropdown menu on hover */
+.dropsdown:hover .dropsdown-content {
+  display: block !important;
+}
+
+.navgbar .logadoifo a.infosselect{
+  display: block;
+  text-align: left;
+  margin-left: 45px !important;
+}
+.logadoifo > button{
+  margin-left: 25px;
+  padding: 9px !important;
+  width: 100%;
+}
+.mural{
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 8vmax;
+}
+.mural .session a{
+    font-size: 15px;
+    display: block;
+    padding: 15px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px !important;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+.mural .session a.active{
+  font-size: 15px;
+  display: block;
+  padding: 15px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px !important;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+.mural .session .laranjinha{
+  width: 90%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(156, 154, 154);
+}
+.mural .session a i{
+  margin-right: 10px !important;
+}
+.mural .session a:hover{
+  color: rgb(180, 184, 187);
+  border-left: solid #ff5b1b;
+}
+.mural .session {
+    display: inline-block;
+    background-color: #1d1d1d !important;
+    text-align: center;
+    width: 300px;
+}
+.mural > .conteudo{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.mural > .session .fotonome {
+  display:block;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+.mural > .session .fotonome .fotoperfil img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: solid 2px #ff5b1b;
+    padding: 5px;
+}
+.mural > .session .fotonome .fotoperfil img:hover{
+  background-color: #1d1d1d;
+  cursor: pointer;
+}
+.mural > .session .fotonome nome{
+  display:block;
+  padding: 5px;
+}
+.mural > .session .fotonome email{
+  display:block;
+  padding: 5px;
+  font-size: 13px;
+}
