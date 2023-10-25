@@ -110,10 +110,6 @@ input:-webkit-autofill::selection{
     background-color: rgb(30, 30, 238) !important;
 }
 
-
-
-
-
 section.cadastro > form  .btn_login{
     width: 100%;
     background-color: #d14919;
@@ -152,16 +148,23 @@ section.cadastro > form  .btn_login{
     border-bottom: 1px solid #ff5b1b;
 }
 
-section.cadastro > form .confirme{
+section.cadastro > form .text_field botão{
     color: white;
-    border-style: none;
-    width: 10%;
-    height: 0px;
-    float: right;
-    position: relative;
+    width: 20px;
+    height: 20px;
     display: flex;
-    margin-bottom: 25px;
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    padding-bottom: 2px;
 }
+
+section.cadastro > form .text_field botão img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 200px;
+}
+
 
 
 .rodapé{
