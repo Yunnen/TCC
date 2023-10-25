@@ -1,7 +1,7 @@
 <?php
     
 
-    $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+    $dados = filter_input_array;
 
     include_once "../Banco_de_Dados/conexao.php";
 
