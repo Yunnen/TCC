@@ -1,17 +1,18 @@
 <?php
     
 
-    $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+    $dados = $_POST;
 
     include_once "../Banco_de_Dados/conexao.php";
+
 
 
     if (empty($dados['nome']) || strlen($dados['nome']) < 3 || strlen($dados['nome']) > 40) {
         $retorna = ['status' => false, 'msg' => ""];
     }elseif(empty($dados['email']) || !filter_var($dados['email'], FILTER_VALIDATE_EMAIL)){
         $retorna = ['status' => false, 'msg' => ""];
-    }elseif(empty($dados['senha']) || strlen($dados['']) < 8 || strlen($dados['senha']) > 20){
-        $retorna = ['status' => false, 'msg' => "Senha"];
+    }elseif(empty($dados['senha']) || strlen($dados['senha']) < 8 || strlen($dados['senha']) > 20){
+        $retorna = ['status' => false, 'msg' => ""];
     }elseif($dados['confirmar'] != $dados['senha']){
         $retorna = ['status' => false, 'msg' => ""];
     }else{
@@ -36,7 +37,7 @@
 
         $comando->execute();
 
-        $retorna = ['status' => true, 'msg' => ""];
+        $retorna = ['status' => true, 'msg' => $dados['senha']];
     
     }catch (PDOException $e) {
     $retorna = ['status' => false, 'msg' => "<h1>Ocorreu um erro ao cadastrar: " . $e->getMessage() . "</h1>"];
