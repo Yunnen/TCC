@@ -9,12 +9,11 @@
   }
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial,sans-serif;
-    
 }
 
 :root{
@@ -54,10 +53,13 @@ body{
 .navgbar img{
     height: 80px;
     margin-right: 30px;
+    padding: 10px;
 }
+
 .navgbar a.img:hover{
  border-bottom:  none !important;
 }
+
 .navgbar a{
     color: #f2f2f2;
     text-decoration: none;
@@ -66,6 +68,7 @@ body{
     margin-left: 15px !important;
     margin-right: 15px !important;
 }
+
 .navgbar a:hover{
     border-bottom: 2px solid #ff5b1b !important;
     color: #f2f2f2 !important;
@@ -79,11 +82,86 @@ body{
 .navgbarnav{
     width: 99vmax !important;
     /* background-image: linear-gradient(to right , #67009a, #60038e, #fdba07); */
-    
 }
+
 .img{
     left: 0;
 }
+
+.logado button{
+  margin-top: 120px;
+  margin-right: 25px;
+  display: none;
+}
+
+.logado{
+  position: absolute;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  display: none;
+}
+.logadoifo .fotologado{
+  margin-left: 5px;
+  margin-right: 10px;
+  width: 40px !important;;
+  height: 40px !important;;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.logadoifo  .item.fotocomlogin{
+  width: 100%;
+  text-align: left;
+}
+.logadoifo  .item.fotocomlogin email{
+  color: gray;
+  font-size: 13px;
+  display: block;
+  margin: 0;
+  margin-left: 50px;
+}
+.logadoifo  .item.fotocomlogin nome{
+  margin-left: 10px;
+}
+
+.logado:hover{
+  cursor: pointer;
+}
+
+.logadoifo{
+  position: absolute;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  margin-top: 210px;
+  margin-right: 100px;
+  width: 300px;
+  height: auto;
+  display: none;
+  justify-content: left;
+  background-color: #1d1d1d;
+  text-align: left;
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)!important;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+
+.logadoifo > .item{
+  display: block;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-right: auto;
+  width: 120px;
+}
+
+
 .login{
     position: absolute;
     right: 0;
@@ -93,22 +171,20 @@ body{
     padding: 0;
     margin: 0;
 }
+
 .navgbar .login:hover
 {
-   border-style: solid;
-    border-color: #ff5b1b;
-    background-color:#ff5b1b;
-    text-decoration: none !important;
-    color: white; 
+  border-style: solid;
+  border-color: #ff5b1b;
+  background-color:#ff5b1b;
+  text-decoration: none !important;
+  color: white; 
 }
 
-/* The dropdown container */
 .dropsdown {
     float: left  !important;;
     overflow: hidden  !important;;
-  }
-  
-  /* Dropdown button */
+}
   .dropsdown .dropsbtn {
     font-size: 16px  !important;;
     border: none  !important;;
@@ -119,6 +195,7 @@ body{
     font-family: inherit  !important;; /* Important for vertical align on mobile phones */
     margin: 0  !important;; /* Important for vertical align on mobile phones */
   }
+
   .posição{
     position: absolute  !important;;
     top: 600px  !important;;
@@ -128,6 +205,7 @@ body{
   .navbar a:hover, .dropsdown:hover .dropsbtn {
    
   }
+
   .login:hover{
     text-decoration: none  !important;
   }
@@ -154,6 +232,18 @@ body{
   .dropsdown:hover .dropsdown-content {
     display: block !important;
   }
+  
+  .navgbar .logadoifo a.infosselect{
+    display: block;
+    text-align: left;
+    margin-left: 45px !important;
+  }
+  .logadoifo > button{
+    margin-left: 25px;
+    padding: 9px !important;
+    width: 100%;
+  }
+  
   .texto{
     position: relative;
     top: 80px;
@@ -649,9 +739,10 @@ body{
     background-image: var(--img);
     background-repeat: no-repeat;
     background-size: 318px;
-    background-position: center; 
+    background-position: top; 
     background-repeat: repeat-x;
     text-align: right;
+    background-color: black;
    }
    
    .blog > .noticias .carde .img .like{
@@ -735,8 +826,7 @@ body{
     width: 99vmax;
     background-color: transparent;
     height: 600px;
-    text-align: center;
-    justify-content: center;
+    display: inline;
    }
 
    .infos > .titulo{
@@ -766,66 +856,142 @@ body{
    }
 
    .infos > .contato{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80vmax;
+    background-image: url('../IMG/Sofyacontato.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position-y: -0;
+    width: auto;
     background-color: #1d1d1d;
-    height: 300px;
-    justify-content:  space-evenly;
+    height: 700px;
     align-items: center;
    }
    .infos > .contato .contatos{
-    width: 250px;
-    height: 250px;
-    justify-content: center;
+    width: 900px;
+    height: 200px;
+    padding-top: 60px;
+    display: flex;
    }
    .infos > .contato .contatos > button{
     display: block;
-    width: 150px;
-    height: 150px;
-    background-color: #ff5b1b;
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
     border-style: none;
     border-radius: 50%;
-    margin-left: auto;
+    margin-left: 150px;
     margin-right: auto;
    }
-   .infos > .contato .contatos > button i{
+
+   .infos > .contato .contatos > button img{
     color:white ;
     font-size: 60px;
+    width: 100px;
+   }
+   .infos > .contato .contatos > button .gmail{
+    width: 90px;
    }
    .infos > .contato .contatos > .informacao{
-    display: block;
-    color: white;
-    margin-top: 30px;
-    font-size: 20px;
-   }
-   .rodape{
-    width: 99vmax;
-    margin-bottom: 1vmax;
-   
-   }
-   .rodape img{
-   
-    width: 200px;
-   }
-
-   .rodape .copy{
-   
-    color: white;
-   }
-
-   .rodape .links{
-    text-align: left;
-    color: white;
-    margin-left: 30px;
-   }
-   .rodape .links a{
     display: flex;
-
-    color: #f2f2f2;
-    text-decoration: none;
-    padding: 5px;
-    float: right;
+    color: white;
+    margin-top: 35px;
+    font-size: 30px;
+    text-align: center;
+    width: 66%;
    }
+   .inscricao{
+    margin-top: 285px;
+    background-color: #001421;
+    width: 100%;
+    height: 230px;
+    position: relative;
+    color: white;
+    align-items: center;
+    display: flex;
+    text-align: left;
+   }
+   .inscricao > .esquerda{
+    float: left;
+    
+    width: 50%;
+   }
+   .inscricao > .direita{
+    float: right;
+    width: 50%;
+   }
+   .inscricao > .esquerda .titulo{
+      
+      font-size: 20px;
+      margin-left: 10px;
+      display: block;
+      margin-left: 90px;
+   }
+   .inscricao > .esquerda .subtitulo{
    
+    font-size: 18px;
+    margin-left: 10px;
+    display: block;
+    color: #ff5b1b;
+    margin-left: 90px;
+ }
+ .inscricao > .direita .text_field {
+  
+  margin-right: 100px;
+  display: flex;
+  text-align: left;
+}
+ .inscricao > .direita .text_field input{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.829); 
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 80px;
+}
+.inscricao > .text_field input:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.inscricao > .direita  .text_field button{
+  display: inline-block;
+  background-color: #ff5b1b; 
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.rodape{
+  margin-top: 0;
+  width: 99vmax;
+  margin-bottom: 1vmax;
+}
+.rodape img{
+  width: 200px;
+}
+
+.rodape .copy{
+  color: white;
+}
+
+.rodape .links{
+  text-align: left;
+  color: white;
+  margin-left: 30px;
+}
+
+.rodape .links a{
+  display: flex;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 5px;
+  float: right;
+}
+
+  
