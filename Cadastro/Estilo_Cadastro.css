@@ -174,3 +174,17 @@ section.cadastro > form .text_field botão img{
     margin-right: auto;
     padding: 20px;
 }
+
+#loading{
+    animation: quica .4s cubic-bezier(.53, -0.03, .67, 1.06);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes quica{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
