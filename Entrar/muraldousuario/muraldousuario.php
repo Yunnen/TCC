@@ -9,8 +9,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo_usuario.css" media="screen"/>
-
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="../../IMG/Novo Projeto2.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -78,7 +78,6 @@
           </div>
       </div>
 </div>
-
     <section class="mural">
     <div class="session">
         <div class="fotonome">
@@ -88,16 +87,16 @@
                <nome><?php echo $_SESSION['Nome_Usuario'] ?></nome>
                <email><?php echo $_SESSION['Email_Usuario'] ?></email>
       </div>
-        <a class='item active' href="#"><i class="fa-solid fa-user"></i>Minha conta</a>
-        <a class='item' href="#"><i class="fa-solid fa-book"></i>Meu Curso em andamento</a>
-        <a class='item' href="#"><i class="fa-solid fa-graduation-cap"></i>Meu Certificado EAD</a>
+        <a class='item active' href="#"><img src="../../IMG/outline_account_circle_white_24dp.png">  Minha conta</a>
+        <a class='item' href="#"><img src="../../IMG/outline_book_white_24dp.png"> Curso em andamento</a>
+        <a class='item' href="#"><i class="fa-regular fa-graduation-cap"></i>Meu Certificado EAD</a>
         <label class='laranjinha'></label>
-        <a class='item' href="../../index.php"><i class="fa-solid fa-headset"></i>Suporte</a>
+        <a class='item' href="../../index.php"><img src="../../IMG/outline_support_agent_white_24dp.png">support_agent </span>Suporte</a>
       </div>
     </div>
 
     <div class="conteudo">
-        
+        Muitos contéudos
     </div>
     </section>
 
