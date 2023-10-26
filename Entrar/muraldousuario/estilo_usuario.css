@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +17,7 @@
     font-family: Arial,sans-serif;
 }
 body{
-    background-color: black !important;;
+    background-color: black !important;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -13,11 +25,10 @@ body{
 
 }
 .navbar{
-    position: absolute !important;;
-    top:0 !important;;
-    display: block !important;;
-    width:100vmax !important;;
-    height: auto !important;;
+    position: absolute !important;
+    top:0 !important;
+    display: block !important;
+    width: 100% !important;
     background-color: black !important;
 }
 .navgbar{
@@ -27,8 +38,8 @@ body{
   height: auto!important;
   margin: 0!important;
   display: flex!important;
-  height: 90px!important;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)!important;
+  height: 80px!important;
+  /*box-shadow: 0px 8px 16px 0px #ff5b1b!important;*/
 }
 .navgbar img{
   height: 80px;
@@ -85,8 +96,8 @@ display: none;
 .logadoifo .fotologado{
 margin-left: 5px;
 margin-right: 10px;
-width: 40px !important;;
-height: 40px !important;;
+width: 40px !important;
+height: 40px !important;
 border-radius: 50%;
 margin: 0;
 padding: 0;
@@ -162,18 +173,18 @@ color: white;
 }
 
 .dropsdown {
-  float: left  !important;;
-  overflow: hidden  !important;;
+  float: left  !important;
+  overflow: hidden  !important;
 }
 .dropsdown .dropsbtn {
-  font-size: 16px  !important;;
-  border: none  !important;;
-  outline: none  !important;;
-  color: white  !important;;
-  padding: 14px 16px  !important;;
-  background-color: black  !important;;
-  font-family: inherit  !important;; /* Important for vertical align on mobile phones */
-  margin: 0  !important;; /* Important for vertical align on mobile phones */
+  font-size: 16px  !important;
+  border: none  !important;
+  outline: none  !important;
+  color: white  !important;
+  padding: 14px 16px  !important;
+  background-color: black  !important;
+  font-family: inherit  !important;;/* Important for vertical align on mobile phones */
+  margin: 0  !important;;/* Important for vertical align on mobile phones */
 }
 
 .posição{
@@ -188,22 +199,22 @@ color: white;
 
 /* Dropdown content (hidden by default) */
 .dropsdown-content {
-  display: none  !important;;
-  position: absolute  !important;;
-  min-width: 160px  !important;;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)  !important;;
-  z-index: 1  !important;;
+  display: none  !important;
+  position: absolute  !important;
+  min-width: 160px  !important;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)  !important;
+  z-index: 1  !important;
   background-color: black;
 }
 
 /* Links inside the dropdown */
 .dropsdown-content a {
-  float: none  !important;;
-  color: white  !important;;
-  padding: 12px 16px  !important;;
-  text-decoration: none  !important;;
-  display: block  !important;;
-  text-align: left  !important;;
+  float: none  !important;
+  color: white  !important;
+  padding: 12px 16px  !important;
+  text-decoration: none  !important;
+  display: block  !important;
+  text-align: left  !important;
 }
 /* Show the dropdown menu on hover */
 .dropsdown:hover .dropsdown-content {
@@ -221,11 +232,10 @@ color: white;
   width: 100%;
 }
 .mural{
-    background-color: bisque;
+    background-color: #1d1d1d;
     width: 100%;
     height: 100%;
-    display: flex;
-    margin-top: 8vmax;
+    display: block;
 }
 .mural .session a{
     font-size: 15px;
@@ -258,22 +268,40 @@ color: white;
 }
 .mural .session a i{
   margin-right: 10px !important;
+  color: white;
+}
+.mural .session a span{
+  font-size: 20px;
+  margin-right: 10px !important;
+  color: white;
+  font-family: Material Icons;
+}
+.mural .session a img{
+  width: 20px;
+  
+  margin-right: 10px !important;
 }
 .mural .session a:hover{
   color: rgb(180, 184, 187);
   border-left: solid #ff5b1b;
 }
 .mural .session {
-    display: inline-block;
+    display: block;
+    position: fixed;
     background-color: #1d1d1d !important;
     text-align: center;
     width: 300px;
+    height: 100%;
+    margin-top: 6%;
 }
 .mural > .conteudo{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+    background-color: aquamarine;
+    display: block;
+    width:  79vmax;
+    height: 100vmax;
     margin: 0;
+    margin-left: 300px !important;
+
 }
 
 .mural > .session .fotonome {
